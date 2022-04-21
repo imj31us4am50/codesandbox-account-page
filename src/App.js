@@ -1,10 +1,9 @@
 import "./styles.css";
+import React from "react";
+import ReactDOM from "react-dom";
+import bootstrap from "bootstrap"; // eslint-disable-line no-unused-vars
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 export default function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
+  return <div className="oui container-fluid m-0 p-0"></div>;
 }
