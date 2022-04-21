@@ -39,6 +39,9 @@ a {
   padding: 0.5em;
   border-radius: 2em;
   transition: background 0.5s;
+  background: white;
+  opacity: 1;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 830px) {
@@ -67,15 +70,5 @@ a {
 }
 
 .current a {
-  color: #81b73c;
-}
-
-.bg:hover {
-  background: white;
-  opacity: 1;
-  cursor: pointer;
-}
-
-.bg:hover a {
   color: #81b73c;
 }

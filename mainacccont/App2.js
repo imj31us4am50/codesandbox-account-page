@@ -5,7 +5,7 @@ import Title from "/mainacccont/Title.js";
 
 export default function App1() {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid qljuxn">
       <Title />
     </div>
   );

@@ -5,7 +5,7 @@ export default function Nav() {
   return (
     <div className="navbar rowa" style={NavBarCSS}>
       <ul className="nav-list one rowa">
-        <li className="nav-item current">
+        <li className="nav-item">
           <a href="#inserthomelink">ACASĂ</a>
         </li>
         <li className="nav-item">
@@ -20,7 +20,7 @@ export default function Nav() {
         <li className="nav-item">
           <a href="#insertaboutlink">DESPRE</a>
         </li>
-        <li className="nav-item bg">
+        <li className="nav-item bg current">
           <a href="#insertmyacclink">CONTUL MEU</a>
         </li>
       </ul>
