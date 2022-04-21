@@ -3,7 +3,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import bootstrap from "bootstrap"; // eslint-disable-line no-unused-vars
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import NavBar from "/navbar/App1.js";
 
 export default function App() {
-  return <div className="oui container-fluid m-0 p-0"></div>;
+  return (
+    <div className="oui container-fluid m-0 p-0">
+      <NavBar />
+    </div>
+  );
 }
