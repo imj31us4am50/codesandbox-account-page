@@ -38,6 +38,13 @@ export default function MainContentOfAcc() {
               value="naturelover271"
               id="username-add"
             />
+            <div className="tltp-feature">
+              <img
+                src="https://imj31us4am50.github.io/imgs/edit-pencil-icon.png"
+                className="edit-feature d-inline"
+              />
+              <span className="tltptext-feature">Schimbă numele</span>
+            </div>
           </div>
           <div className="info2 p-2">
             <div className="password-require d-inline">Parolă: </div>
@@ -47,6 +54,13 @@ export default function MainContentOfAcc() {
               value="myPassword123"
               id="password-add"
             />
+            <div className="tltp-feature">
+              <img
+                src="https://imj31us4am50.github.io/imgs/edit-pencil-icon.png"
+                className="edit-feature d-inline"
+              />
+              <span className="tltptext-feature">Schimbă parola</span>
+            </div>
           </div>
         </div>
       </div>
