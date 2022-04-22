@@ -1,9 +1,70 @@
 .profile-picture {
   border-radius: 50%;
   max-width: 250px;
+  position: relative;
 }
 
 .account-pfp {
 }
 .account-infomation {
+}
+
+.edit-pencil-icon {
+  position: absolute;
+  width: 40px;
+  transform: translate(-100%, -250%);
+  cursor: pointer;
+}
+
+/* C S S   F O R   T O O L T I P S */
+
+/* Tooltip container */
+.tltp {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tltp .tltptext {
+  visibility: hidden;
+  width: max-content;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #81b73c;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  transform: translate(-55%, -450%);
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+/* Tooltip arrow */
+.tltp .tltptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #81b73c transparent transparent transparent;
+}
+
+/* Show tooltiptext on mouseover */
+.tltp:hover .tltptext {
+  visibility: visible;
+  opacity: 0.8;
+}
+
+/* M E D I A   Q U E R I E S */
+
+@media screen and (max-width: 760px) {
+  .aibf2u {
+    flex-direction: column-reverse;
+  }
 }

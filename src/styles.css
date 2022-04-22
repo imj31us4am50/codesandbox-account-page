@@ -3,6 +3,7 @@
 .oui {
   min-height: 100vh;
   font-family: Quicksand, sans-serif;
+  overflow-y: hidden;
   /* height: 10000px; */
 }
 
