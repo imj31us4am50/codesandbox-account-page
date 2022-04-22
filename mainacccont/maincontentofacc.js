@@ -12,7 +12,7 @@ export default function MainContentOfAcc() {
           <div className="tltp">
             <img
               src="https://imj31us4am50.github.io/imgs/edit-pencil-icon.png"
-              className="edit-pencil-icon"
+              className="edit-pencil-icon feature-icon"
             />
             <span className="tltptext">Schimbă imaginea de profil</span>
           </div>
@@ -41,7 +41,7 @@ export default function MainContentOfAcc() {
             <div className="tltp-feature">
               <img
                 src="https://imj31us4am50.github.io/imgs/edit-pencil-icon.png"
-                className="edit-feature d-inline"
+                className="edit-feature d-inline feature-icon"
               />
               <span className="tltptext-feature">Schimbă numele</span>
             </div>
@@ -57,14 +57,28 @@ export default function MainContentOfAcc() {
             <div className="tltp-feature">
               <img
                 src="https://imj31us4am50.github.io/imgs/view-eye.png"
-                className="view-feature d-inline"
+                className="view-feature d-inline feature-icon"
+                id="view-password-icon"
+                onClick={() => {
+                  let passTooltip = document.getElementById("spanforpass");
+                  let passInput = document.getElementById("password-add");
+                  if (passInput.type == "password") {
+                    passInput.type = "text";
+                    passTooltip.textContent = "Ascunde parola";
+                  } else {
+                    passInput.type = "password";
+                    passTooltip.textContent = "Vizualizează parola";
+                  }
+                }}
               />
-              <span className="tltptext-feature">Vizualizează parola</span>
+              <span className="tltptext-feature" id="spanforpass">
+                Vizualizează parola
+              </span>
             </div>
             <div className="tltp-feature">
               <img
                 src="https://imj31us4am50.github.io/imgs/edit-pencil-icon.png"
-                className="edit-feature d-inline"
+                className="edit-feature d-inline feature-icon"
               />
               <span className="tltptext-feature">Schimbă parola</span>
             </div>

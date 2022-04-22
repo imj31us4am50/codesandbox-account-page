@@ -22,12 +22,22 @@
   outline: none;
   background: #f0f0f0;
   text-align: center;
+  font-size: 1.25rem;
+  padding: 0.3em;
 }
 
 .edit-feature,
 .view-feature {
   width: 25px;
   margin-left: 0.5em;
+}
+
+.account-information {
+  user-select: none;
+}
+
+.feature-icon {
+  cursor: pointer;
 }
 
 /* C S S   F O R   T O O L T I P S */
