@@ -4,7 +4,7 @@ export default function MainContentOfAcc() {
   return (
     <div className="container-fluid" style={MainContentOfAccCSS}>
       <div className="aibf2u container-fluid d-flex align-items-start">
-        <div className="accout-pfp text-center w-100 ">
+        <div className="accout-pfp text-center w-100 mb-5">
           <img
             src="https://imj31us4am50.github.io/imgs/feline-bw.jpeg"
             className="profile-picture"
@@ -54,6 +54,13 @@ export default function MainContentOfAcc() {
               value="myPassword123"
               id="password-add"
             />
+            <div className="tltp-feature">
+              <img
+                src="https://imj31us4am50.github.io/imgs/view-eye.png"
+                className="view-feature d-inline"
+              />
+              <span className="tltptext-feature">Vizualizează parola</span>
+            </div>
             <div className="tltp-feature">
               <img
                 src="https://imj31us4am50.github.io/imgs/edit-pencil-icon.png"

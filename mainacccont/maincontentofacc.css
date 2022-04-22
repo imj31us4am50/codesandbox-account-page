@@ -24,7 +24,8 @@
   text-align: center;
 }
 
-.edit-feature {
+.edit-feature,
+.view-feature {
   width: 25px;
   margin-left: 0.5em;
 }
@@ -58,20 +59,8 @@
   transition: opacity 1s ease;
 }
 
-/* Tooltip arrow */
-.tltp .tltptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #81b73c transparent transparent transparent;
-}
-
 /* Show tooltiptext on mouseover */
-.tltp-feature .tltptext {
+.tltp:hover .tltptext {
   visibility: visible;
   opacity: 0.8;
 }
@@ -86,6 +75,7 @@
 
 /* Tooltip text */
 .tltp-feature .tltptext-feature {
+  font-size: 1rem;
   visibility: hidden;
   width: max-content;
   text-align: center;
@@ -96,23 +86,11 @@
   /* Position the tooltip text */
   position: absolute;
   z-index: 1;
-  transform: translate(-55%, -450%);
+  transform: translate(10%, 0%);
 
   /* Fade in tooltip */
   opacity: 0;
   transition: opacity 1s ease;
-}
-
-/* Tooltip arrow */
-.tltp-feature .tltptex-feature::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #81b73c transparent transparent transparent;
 }
 
 /* Show tooltiptext on mouseover */
@@ -125,6 +103,6 @@
 
 @media screen and (max-width: 760px) {
   .aibf2u {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
