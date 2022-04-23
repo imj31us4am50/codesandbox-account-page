@@ -22,7 +22,8 @@
 }
 
 #username-add,
-#password-add {
+#password-add,
+#email-add {
   border: none;
   outline: none;
   background: #f0f0f0;

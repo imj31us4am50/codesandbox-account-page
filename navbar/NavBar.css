@@ -38,10 +38,15 @@ a {
   background: #81b73c;
   padding: 0.5em;
   border-radius: 2em;
-  transition: background 0.5s;
   background: white;
   opacity: 1;
   cursor: pointer;
+  transition: background 0.5s, color 0.5s;
+}
+
+.current a {
+  color: #81b73c;
+  transition: background 0.5s, color 0.5s;
 }
 
 @media screen and (max-width: 830px) {
@@ -67,8 +72,4 @@ a {
   .two {
     margin: auto;
   }
-}
-
-.current a {
-  color: #81b73c;
 }

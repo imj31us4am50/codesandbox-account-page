@@ -83,6 +83,22 @@ export default function MainContentOfAcc() {
               <span className="tltptext-feature">Schimbă parola</span>
             </div>
           </div>
+          <div className="info3 p-2">
+            <div className="username-require d-inline">Email: </div>
+            <input
+              type="email"
+              readOnly
+              value="qorisa23@yahoo.com"
+              id="email-add"
+            />
+            <div className="tltp-feature">
+              <img
+                src="https://imj31us4am50.github.io/imgs/edit-pencil-icon.png"
+                className="edit-feature d-inline feature-icon"
+              />
+              <span className="tltptext-feature">Schimbă email-ul</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
