@@ -23,13 +23,19 @@
 
 #username-add,
 #password-add,
-#email-add {
+#email-add,
+#bio-add {
   border: none;
   outline: none;
   background: #f0f0f0;
   text-align: center;
   font-size: 1.25rem;
   padding: 0.3em;
+}
+
+#bio-add {
+  overflow-y: auto;
+  resize: none;
 }
 
 .edit-feature,

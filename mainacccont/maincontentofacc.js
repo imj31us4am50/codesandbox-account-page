@@ -84,7 +84,7 @@ export default function MainContentOfAcc() {
             </div>
           </div>
           <div className="info3 p-2">
-            <div className="username-require d-inline">Email: </div>
+            <div className="email-require d-inline">Email: </div>
             <input
               type="email"
               readOnly
@@ -97,6 +97,21 @@ export default function MainContentOfAcc() {
                 className="edit-feature d-inline feature-icon"
               />
               <span className="tltptext-feature">Schimbă email-ul</span>
+            </div>
+          </div>
+          <div className="info4 p-2">
+            <div className="bio-require d-inline">Bio: </div>
+            <textarea
+              readOnly
+              value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              id="bio-add"
+            />
+            <div className="tltp-feature">
+              <img
+                src="https://imj31us4am50.github.io/imgs/edit-pencil-icon.png"
+                className="edit-feature d-inline feature-icon"
+              />
+              <span className="tltptext-feature">Editează biografia</span>
             </div>
           </div>
         </div>
