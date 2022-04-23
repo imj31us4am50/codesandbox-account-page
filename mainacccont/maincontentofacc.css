@@ -1,3 +1,8 @@
+.account-information {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 .profile-picture {
   border-radius: 50%;
   max-width: 250px;
