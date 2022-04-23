@@ -52,6 +52,10 @@
   cursor: pointer;
 }
 
+.image-upload > input {
+  display: none;
+}
+
 /* C S S   F O R   T O O L T I P S */
 
 /* CHANGE PROFILE PICTURE TOOLTIP */

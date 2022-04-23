@@ -8,16 +8,27 @@ export default function MainContentOfAcc() {
           <img
             src="https://imj31us4am50.github.io/imgs/feline-bw.jpeg"
             className="profile-picture"
-          ></img>
+            id="profile-picture-to-change"
+          />
           <div className="tltp">
-            <img
+            {/* <img
               src="https://imj31us4am50.github.io/imgs/edit-pencil-icon.png"
               className="edit-pencil-icon feature-icon"
-            />
+            /> */}
+            <div class="image-upload">
+              <label for="file-input" onClick={() => {}}>
+                <img
+                  src="https://imj31us4am50.github.io/imgs/edit-pencil-icon.png"
+                  className="edit-pencil-icon feature-icon"
+                />
+              </label>
+
+              <input id="file-input" type="file" />
+            </div>
             <span className="tltptext">Schimbă imaginea de profil</span>
           </div>
         </div>
-        <div className="account-information h4 w-100 mt-4">
+        <div className="account-information h4 w-100">
           {/* looks bad
           <div className="d-flex container-of-infoacc align-items-center">
             <div className="thediv">Nume utilizator:</div>
@@ -30,7 +41,7 @@ export default function MainContentOfAcc() {
             <div className="thediv">Parolă:</div>
             <span id="password" className="thespan ml-2"></span>
           </div> */}
-          <div className="info1 p-2">
+          <div className="info1 pb-3">
             <div className="username-require d-inline">Nume utilizator: </div>
             <input
               type="text"
@@ -46,7 +57,7 @@ export default function MainContentOfAcc() {
               <span className="tltptext-feature">Schimbă numele</span>
             </div>
           </div>
-          <div className="info2 p-2">
+          <div className="info2 pb-3">
             <div className="password-require d-inline">Parolă: </div>
             <input
               type="password"
@@ -83,7 +94,7 @@ export default function MainContentOfAcc() {
               <span className="tltptext-feature">Schimbă parola</span>
             </div>
           </div>
-          <div className="info3 p-2">
+          <div className="info3 pb-3">
             <div className="email-require d-inline">Email: </div>
             <input
               type="email"
@@ -99,7 +110,7 @@ export default function MainContentOfAcc() {
               <span className="tltptext-feature">Schimbă email-ul</span>
             </div>
           </div>
-          <div className="info4 p-2">
+          <div className="info4 pb-3">
             <div className="bio-require d-inline">Bio: </div>
             <textarea
               readOnly
