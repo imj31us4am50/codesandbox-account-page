@@ -9,9 +9,14 @@
   position: relative;
 }
 
-.account-pfp {
+.advertisement {
+  display: none;
+  transition: display 1.5s;
 }
-.account-infomation {
+.save-adv {
+  color: #81b73c;
+  display: none;
+  transition: display 0.5s;
 }
 
 .edit-pencil-icon {
@@ -128,7 +133,8 @@
 /* M E D I A   Q U E R I E S */
 
 @media screen and (max-width: 760px) {
-  .aibf2u {
+  .aibf2u,
+  .oapme {
     flex-direction: column;
   }
 }

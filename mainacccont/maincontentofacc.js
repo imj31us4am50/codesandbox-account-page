@@ -42,30 +42,59 @@ export default function MainContentOfAcc() {
             <span id="password" className="thespan ml-2"></span>
           </div> */}
           <div className="info1 pb-3">
-            <div className="username-require d-inline">Nume utilizator: </div>
-            <input
-              type="text"
-              readOnly
-              value="naturelover271"
-              id="username-add"
-            />
-            <div className="tltp-feature">
+            <div className="oapme d-inline-flex">
+              <div className="username-require d-inline">Nume utilizator: </div>
+              <input type="text" readOnly id="username-add" />
+            </div>
+            <div className="tltp-feature d-inline">
               <img
                 src="https://imj31us4am50.github.io/imgs/edit-pencil-icon.png"
                 className="edit-feature d-inline feature-icon"
+                onClick={() => {
+                  {
+                    /* give permission to update */
+                  }
+                  let input = document.querySelector("#username-add");
+                  let advel = document.querySelector(".advertisement");
+                  let savedel = document.querySelector(".save-adv");
+                  {
+                    /* give permission to update */
+                  }
+                  input.readOnly = false;
+                  input.focus();
+
+                  savedel.style.display = "none";
+                  advel.style.display = "block";
+                  input.addEventListener("keypress", function (e) {
+                    if (e.key === "Enter") {
+                      if (advel.style.display === "block")
+                        savedel.style.display = "none";
+                      input.readOnly = true;
+                      advel.style.display = "none";
+
+                      savedel.style.display = "block";
+
+                      setTimeout(() => {
+                        savedel.style.display = "none";
+                      }, 2000);
+                      {
+                        /* update input value 
+                        e pe enter key rn dar putem schimba
+                        */
+                      }
+                    }
+                  });
+                }}
               />
               <span className="tltptext-feature">Schimbă numele</span>
             </div>
           </div>
           <div className="info2 pb-3">
-            <div className="password-require d-inline">Parolă: </div>
-            <input
-              type="password"
-              readOnly
-              value="myPassword123"
-              id="password-add"
-            />
-            <div className="tltp-feature">
+            <div className="oapme d-inline-flex">
+              <div className="password-require d-inline">Parolă: </div>
+              <input type="password" readOnly id="password-add" />
+            </div>
+            <div className="tltp-feature d-inline">
               <img
                 src="https://imj31us4am50.github.io/imgs/view-eye.png"
                 className="view-feature d-inline feature-icon"
@@ -90,40 +119,142 @@ export default function MainContentOfAcc() {
               <img
                 src="https://imj31us4am50.github.io/imgs/edit-pencil-icon.png"
                 className="edit-feature d-inline feature-icon"
+                onClick={() => {
+                  {
+                    /* give permission to update */
+                  }
+                  let input = document.querySelector("#password-add");
+                  let advel = document.querySelector(".advertisement");
+                  let savedel = document.querySelector(".save-adv");
+                  {
+                    /* give permission to update */
+                  }
+                  input.readOnly = false;
+                  input.focus();
+
+                  input.type = "text";
+                  savedel.style.display = "none";
+                  advel.style.display = "block";
+                  input.addEventListener("keypress", function (e) {
+                    if (e.key === "Enter") {
+                      if (advel.style.display === "block")
+                        savedel.style.display = "none";
+                      input.readOnly = true;
+                      input.type = "password";
+                      advel.style.display = "none";
+
+                      savedel.style.display = "block";
+
+                      setTimeout(() => {
+                        savedel.style.display = "none";
+                      }, 2000);
+
+                      {
+                        /* update input value 
+                        e pe enter key rn dar putem schimba
+                        */
+                      }
+                    }
+                  });
+                }}
               />
               <span className="tltptext-feature">Schimbă parola</span>
             </div>
           </div>
           <div className="info3 pb-3">
-            <div className="email-require d-inline">Email: </div>
-            <input
-              type="email"
-              readOnly
-              value="qorisa23@yahoo.com"
-              id="email-add"
-            />
-            <div className="tltp-feature">
+            <div className="oapme d-inline-flex">
+              <div className="email-require d-inline">Email: </div>
+              <input type="email" readOnly id="email-add" />
+            </div>
+            <div className="tltp-feature d-inline">
               <img
                 src="https://imj31us4am50.github.io/imgs/edit-pencil-icon.png"
                 className="edit-feature d-inline feature-icon"
+                onClick={() => {
+                  {
+                    /* give permission to update */
+                  }
+                  let input = document.querySelector("#email-add");
+                  let advel = document.querySelector(".advertisement");
+                  let savedel = document.querySelector(".save-adv");
+                  {
+                    /* give permission to update */
+                  }
+                  input.readOnly = false;
+                  input.focus();
+
+                  savedel.style.display = "none";
+                  advel.style.display = "block";
+                  input.addEventListener("keypress", function (e) {
+                    if (e.key === "Enter") {
+                      if (advel.style.display === "block")
+                        savedel.style.display = "none";
+                      input.readOnly = true;
+                      advel.style.display = "none";
+
+                      savedel.style.display = "block";
+
+                      setTimeout(() => {
+                        savedel.style.display = "none";
+                      }, 2000);
+                      {
+                        /* update input value 
+                        e pe enter key rn dar putem schimba
+                        */
+                      }
+                    }
+                  });
+                }}
               />
               <span className="tltptext-feature">Schimbă email-ul</span>
             </div>
           </div>
           <div className="info4 pb-3">
             <div className="bio-require d-inline">Bio: </div>
-            <textarea
-              readOnly
-              value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-              id="bio-add"
-            />
+            <textarea readOnly id="bio-add" />
             <div className="tltp-feature">
               <img
                 src="https://imj31us4am50.github.io/imgs/edit-pencil-icon.png"
                 className="edit-feature d-inline feature-icon"
+                onClick={() => {
+                  let input = document.querySelector("#bio-add");
+                  let advel = document.querySelector(".advertisement");
+                  let savedel = document.querySelector(".save-adv");
+                  {
+                    /* give permission to update */
+                  }
+                  input.readOnly = false;
+                  input.focus();
+
+                  savedel.style.display = "none";
+                  advel.style.display = "block";
+                  input.addEventListener("keypress", function (e) {
+                    if (e.key === "Enter") {
+                      if (advel.style.display === "block")
+                        savedel.style.display = "none";
+                      input.readOnly = true;
+                      advel.style.display = "none";
+
+                      savedel.style.display = "block";
+
+                      setTimeout(() => {
+                        savedel.style.display = "none";
+                      }, 2000);
+                      {
+                        /* update input value 
+                        e pe enter key rn dar putem schimba
+                        */
+                      }
+                    }
+                  });
+                }}
               />
               <span className="tltptext-feature">Editează biografia</span>
             </div>
+            <div className="advertisement h6 opacity-75 pt-4">
+              Schimbările se salvează apăsând tasta <kbd>Enter</kbd>.
+            </div>
+            <div className="save-adv h6 opacity-75 pt-4">Salvat!</div>
           </div>
         </div>
       </div>
